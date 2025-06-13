@@ -18,3 +18,13 @@ def about_me(request):
 def version_info(request):
     content = '{"version": "1.0", "author": "Yin Wang"}'
     return HttpResponse(content, content_type="application/json")
+
+
+def news(request):
+    data = {
+        'news': [
+            "RiffMates now has a news page!",
+            "RiffMates has its first web page.",
+        ],
+    }
+    return render(request, "news.html", data)
