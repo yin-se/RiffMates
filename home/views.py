@@ -27,4 +27,4 @@ def news(request):
             "RiffMates has its first web page.",
         ],
     }
-    return render(request, "news.html", data)
+    return render(request, "news2.html", data)
